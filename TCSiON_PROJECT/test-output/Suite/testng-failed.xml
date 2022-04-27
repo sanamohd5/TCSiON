@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.phptravels.scriptsSG1.TestClassMyBookingsSG1">
+        <methods>
+          <include name="verifyMyBookings"/>
+          <include name="quitBrowser"/>
+          <include name="onSetup"/>
+        </methods>
+      </class> <!-- com.phptravels.scriptsSG1.TestClassMyBookingsSG1 -->
+      <class name="com.phptravels.scriptsSG1.TestClassMyProfileSG1">
+        <methods>
+          <include name="UpdateAddress"/>
+          <include name="verifyMyProfile"/>
+          <include name="quitBrowser"/>
+          <include name="onSetup"/>
+          <include name="verifyLogout"/>
+        </methods>
+      </class> <!-- com.phptravels.scriptsSG1.TestClassMyProfileSG1 -->
+      <class name="com.phptravels.scriptsSG1.TestClassLoginSG1">
+        <methods>
+          <include name="verifyVeVp"/>
+          <include name="verifyNeNp"/>
+          <include name="verifyIeVp"/>
+          <include name="verifyIeIp"/>
+          <include name="quitBrowser"/>
+          <include name="onSetup"/>
+          <include name="verifyVeIp"/>
+        </methods>
+      </class> <!-- com.phptravels.scriptsSG1.TestClassLoginSG1 -->
+      <class name="com.phptravels.scriptsSG1.TestClassAddFundsSG1">
+        <methods>
+          <include name="verifyAddFunds"/>
+          <include name="quitBrowser"/>
+          <include name="onSetup"/>
+        </methods>
+      </class> <!-- com.phptravels.scriptsSG1.TestClassAddFundsSG1 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
