@@ -16,21 +16,15 @@ public class LoginPageSG1 {
 	WebDriver driver;
 	
 	@FindBy(xpath="//div[2]/div[1]//div[2]//a/small")
-	private WebElement customerfront;   
-//	@FindBy(css="a.theme-btn:nth-child(6)")
-	@FindBy(xpath="//header/div[1]//div[2]//a[2]")
-    private WebElement Login;    
-  //  @FindBy(css="input[placeholder='Email']")
+	private WebElement customerfront;      
 	@FindBy(xpath="//input[@placeholder='Email']")
     private WebElement email;    
-  //  @FindBy(css="input[placeholder='Password']")
 	@FindBy(xpath="//input[@placeholder='Password']")
     private WebElement password;     
     @FindBy(xpath="//body/div//div[3]/button")
- //   @FindBy(css=".btn-lg")
     private WebElement LoginButton;
-    @FindBy(xpath="//div[@class='message']")
-    private WebElement errormsg;
+    @FindBy(id="cookie_stop")
+    private WebElement cookie;
     
     public LoginPageSG1(WebDriver driver) {    
     	this.driver = driver;    
@@ -43,8 +37,8 @@ public class LoginPageSG1 {
 	   	 ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 	   	 driver.switchTo().window(tabs.get(1));
 	    }
-    public void clickLogin() {
-    	Login.click();
+    public void clickCookie() {
+    	cookie.click();
     	}
     public void setEmail(String strEmail){
  	   email.sendKeys(strEmail);          	
@@ -65,7 +59,6 @@ public class LoginPageSG1 {
     	WebDriverWait wait=new WebDriverWait(driver,10);	  
     	wait.until(ExpectedConditions.elementToBeClickable(LoginButton));    	
     	LoginButton.click();
-    //	return new MyBookingsPageSG1(driver);
     	}  	
   
   	   }

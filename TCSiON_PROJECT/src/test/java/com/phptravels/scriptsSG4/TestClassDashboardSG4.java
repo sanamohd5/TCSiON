@@ -14,13 +14,23 @@ public class TestClassDashboardSG4 extends TestBase {
 	DashBoardSG4 objDashbrd;
 	
 	@Test(priority=6)  
-	public void verifyText() throws IOException {  
+	public void verifyDashboard() throws IOException {  
 		//Create DashBoard Page object	   
 		objDashbrd = new DashBoardSG4(driver);
-		objDashbrd.testtext();
+		objDashbrd.ClickDashboardBtn();
+		String overview=objDashbrd.SetSalesOverviewText();
+		System.out.println("Text present : " + overview);
+	}
+	@Test(priority=7)
+	public void DisplayRevenueBreak() throws IOException {  
+			//Create DashBoard Page object	   
+		objDashbrd = new DashBoardSG4(driver);
+		boolean Revenuechart=objDashbrd.SetRevenueBreakChart();
+		System.out.println("Displaying Revenue BreakDown : " +  Revenuechart);
+		Assert.assertEquals(Revenuechart, true);
 		}
 	
-	@Test(priority=7)   
+	@Test(priority=8)   
 	public void verifyTours() throws IOException {  
 		//Create DashBoard Page object	   
 		objDashbrd = new DashBoardSG4(driver);
@@ -28,24 +38,24 @@ public class TestClassDashboardSG4 extends TestBase {
 		objDashbrd.clickSubTours();
 		objDashbrd.clickManageTours();
 		String actualTitle = driver.getTitle();
-	    System.out.println(actualTitle);
+	    System.out.println("Manage Tours Title: " +actualTitle);
 	    String expectedTitle =AutomationConstants.MANAGE_TOURS_TITLE;
 	    Assert.assertEquals(expectedTitle,actualTitle);
 	    objDashbrd.clickTours();
 		objDashbrd.clickSubTours();
 	    objDashbrd.clickExtras();
 		String actualTitle2 = driver.getTitle();
-	    System.out.println(actualTitle);
+	    System.out.println("Extras Tours Title: " +actualTitle2);
 	    String expectedTitle2 =AutomationConstants.EXTRAS_TOURS_TITLE;
 	    Assert.assertEquals(expectedTitle2,actualTitle2);
 		}
-	@Test(priority=8)   
+	@Test(priority=9)   
 	public void verifyBookings() throws IOException {  
 		//Create DashBoard Page object	   
 		objDashbrd = new DashBoardSG4(driver);
 		objDashbrd.clickBookings();
 		String actualTitle = driver.getTitle();
-	    System.out.println(actualTitle);
+	    System.out.println("Unble to load Bookings Page : " + actualTitle);
 	    String expectedTitle =AutomationConstants.SUPPLIER_BOOKINGS_TITLE;
 	    Assert.assertEquals(expectedTitle,actualTitle);
 	    }

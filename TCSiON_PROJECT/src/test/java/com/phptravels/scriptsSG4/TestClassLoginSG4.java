@@ -33,7 +33,7 @@ public class TestClassLoginSG4 extends TestBase {
 	 				    
 	    }
 	
-	@Test(priority=2, enabled=false)   //Verifying valid username and invalid password by selecting 
+	@Test(priority=2)   //Verifying valid username and invalid password by selecting 
 	public void verifyVeIp() throws IOException {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);
@@ -51,7 +51,7 @@ public class TestClassLoginSG4 extends TestBase {
 			    
 	    }
 	
-	@Test(priority=3, enabled=false)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=3)   //Verifying valid username and invalid password by selecting Admin
 	public void verifyIeIp() throws IOException {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);		
@@ -68,7 +68,7 @@ public class TestClassLoginSG4 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);
 	    }
 	    
-	@Test(priority=4, enabled=false)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=4)   //Verifying valid username and invalid password by selecting Admin
 	public void verifyNeNp() throws IOException {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);

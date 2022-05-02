@@ -13,12 +13,6 @@ public class MyProfilePageSG1 {
 	WebDriver driver;
 	@FindBy(xpath="//div[3]/ul/li[4]/a")
     private WebElement myprofile;
-	@FindBy(xpath="//span[@title='AU']")
-			// "//input[@type='search']")
-    private WebElement country; 
-	@FindBy(xpath="//span[@title='India']")
-	private WebElement india;
-	
 	@FindBy(xpath="//input[@name='state']")
 	private WebElement state;
 	@FindBy(xpath="//input[@name='city']")
@@ -44,15 +38,10 @@ public class MyProfilePageSG1 {
     public void clickMyProfile() {
     	myprofile.click();
     	}
-    public void setCountry()   {   
-    	WebDriverWait wait=new WebDriverWait(driver,10);	  
-    	wait.until(ExpectedConditions.elementToBeClickable(country)); 
-    	country.click();
-    	india.click();
-
-  	   }
    
     public void setState(String strState) {
+    	WebDriverWait wait=new WebDriverWait(driver,10);	  
+    	wait.until(ExpectedConditions.elementToBeClickable(state));
     	state.sendKeys(strState);     	
   	   }
     public void setCity(String strCity) {
@@ -79,15 +68,16 @@ public class MyProfilePageSG1 {
     public void clearAddress() {
     	address.clear();
     	}
-//    public String GetUpdateSuccess() {
-//    	return updatesuccess.getText();
-//        	
-//    	}
-//    public void gettext() {
-//    	String x= updatesuccess.getText();
-//    	System.out.println(x);
-//    	}
-//    
+    public void clearAddress2() {
+    	address2.clear();
+    	}
+    public void clearState() {
+    	state.clear();
+    	}
+    public void clearCity() {
+    	city.clear();
+    	}
+
 	
 
 }

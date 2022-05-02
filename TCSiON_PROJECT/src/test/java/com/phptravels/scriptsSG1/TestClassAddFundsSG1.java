@@ -23,6 +23,7 @@ public class TestClassAddFundsSG1 extends TestBase {
 		Thread.sleep(2000);
 		String expectedTitle =AutomationConstants.AUTOMATEDPAYMENT;
 	    String actualTitle = driver.getTitle();
+	    System.out.println("Paid : "+ actualTitle);
 	    Assert.assertEquals(expectedTitle,actualTitle);
 	    objAddFunds.clickBacktoInvoice();
 	    objAddFunds.clickYes();

@@ -13,9 +13,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageSG2 {
 	WebDriver driver;
-
-//	@FindBy(xpath="//header/div[1]//div[2]//a[2]")
-//    private WebElement Login;    
+   
 	@FindBy(xpath="//div[3]//div[1]/a/small")
 	private WebElement agentfront;  
 	@FindBy(xpath="//input[@placeholder='Email']")
@@ -24,16 +22,17 @@ public class LoginPageSG2 {
     private WebElement password;     
     @FindBy(xpath="//body/div//div[3]/button")
     private WebElement LoginButton;
-//    @FindBy(xpath="//div[@class='message']")
-//    private WebElement errormsg;
+    @FindBy(id="cookie_stop")
+    private WebElement cookie;
+
     
     public LoginPageSG2(WebDriver driver) {    
     	this.driver = driver;    
         PageFactory.initElements(driver, this); 
         }        
-//    public void clickLogin() {
-//    	Login.click();
-//    	}
+    public void clickCookie() {
+    	cookie.click();
+    	}
     public void clickAgentFront() {
     	agentfront.click();
     	}

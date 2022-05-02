@@ -14,12 +14,12 @@ import com.phptravelspages.stage1.LoginPageSG1;
 
 public class TestClassLoginSG1 extends TestBase {
 	LoginPageSG1 objLogin;
-	@Test(priority=1)   //Verifying valid username and invalid password by selecting Admin
-	public void verifyIeVp() throws IOException {  
-		//Create Login Page object	   
-		objLogin = new LoginPageSG1(driver);
+	@Test(priority=1)   //Verifying invalid email and valid password 
+	public void verifyIeVp() throws IOException {  	   
+		objLogin = new LoginPageSG1(driver);   //Create Login Page object	
 		objLogin.clickCustomerFront();
-		objLogin.redirectCustomerPage();	    
+		objLogin.redirectCustomerPage();			
+		objLogin.clickCookie();
 	    String email = ExcelUtility.getCellData(1, 1);
 	    String password = ExcelUtility.getCellData(1, 2);
 	    objLogin.setEmail(email);
@@ -28,12 +28,11 @@ public class TestClassLoginSG1 extends TestBase {
 	    String expectedTitle =AutomationConstants.INVALIDLOGINPAGETITLE;
 	    String actualTitle = driver.getTitle();
 	    System.out.println(actualTitle);
-	    Assert.assertEquals(expectedTitle,actualTitle);	 				    
+	    Assert.assertEquals(expectedTitle,actualTitle);	 		
 	    }
 	
-	@Test(priority=2)   //Verifying valid username and invalid password by selecting Admin
-	public void verifyVeIp() throws IOException {  
-		//Create Login Page object	   
+	@Test(priority=2)   //Verifying valid email and invalid password
+	public void verifyVeIp() throws IOException {	   
 		objLogin = new LoginPageSG1(driver);
 		objLogin.clearEmail();
 		objLogin.clearPassword();	    
@@ -50,9 +49,8 @@ public class TestClassLoginSG1 extends TestBase {
 	   			    
 	    }
 	
-	@Test(priority=3)   //Verifying valid username and invalid password by selecting Admin
-	public void verifyIeIp() throws IOException {  
-		//Create Login Page object	   
+	@Test(priority=3)   //Verifying invalid email and invalid password
+	public void verifyIeIp() throws IOException {  		   
 		objLogin = new LoginPageSG1(driver);
 		objLogin.clearEmail();
 		objLogin.clearPassword();	    
@@ -66,9 +64,8 @@ public class TestClassLoginSG1 extends TestBase {
 	    System.out.println(actualTitle);
 	    Assert.assertEquals(expectedTitle,actualTitle);
 	    }
-	@Test(priority=4)   //Verifying valid username and invalid password by selecting Admin
-	public void verifyNeNp() throws IOException {  
-		//Create Login Page object	   
+	@Test(priority=4)   //Verifying null email and null password
+	public void verifyNeNp() throws IOException {     
 		objLogin = new LoginPageSG1(driver);
 		objLogin.clearEmail();
 		objLogin.clearPassword();	    
@@ -83,9 +80,8 @@ public class TestClassLoginSG1 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);			    
 	    }
 	    
-	@Test(priority=5)   //Verifying valid username and invalid password by selecting Admin
-	public void verifyVeVp() throws IOException  {  
-		//Create Login Page object	   
+	@Test(priority=5)   //Verifying valid email and valid password
+	public void verifyVeVp() throws IOException  {     
 		objLogin = new LoginPageSG1(driver);
 		objLogin.clearEmail();
 		objLogin.clearPassword();    

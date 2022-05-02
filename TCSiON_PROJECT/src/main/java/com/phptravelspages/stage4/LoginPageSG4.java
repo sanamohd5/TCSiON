@@ -50,7 +50,7 @@ public class LoginPageSG4 {
  	   }
 
     public void clickLoginButton() {
-    	 WebDriverWait wait=new WebDriverWait(driver,5);	  
+    	 WebDriverWait wait=new WebDriverWait(driver,10);	  
     	 wait.until(ExpectedConditions.elementToBeClickable(LoginButton));
     	LoginButton.click();
 	

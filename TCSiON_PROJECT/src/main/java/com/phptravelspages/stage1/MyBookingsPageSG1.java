@@ -36,7 +36,7 @@ public class MyBookingsPageSG1 {
 //	   	 System.out.println("Customer details correct:" + c);
 //	   	 return new AddFundsPage(driver);
 //	    }
-	//    public AddFundsPage setVoucherConfirm() {
+	
 	    public void setVoucherConfirm() {
 	    	String parent=driver.getWindowHandle();
 	    	Set<String>s=driver.getWindowHandles();
@@ -60,6 +60,5 @@ public class MyBookingsPageSG1 {
 	    	}
 	    	driver.switchTo().window(parent);
 
-	    // return new AddFundsPage(driver);
 		    }
 }
