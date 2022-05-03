@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageSG1 {
 	WebDriver driver;
-	
+	// All WebElements are identified by @FindBy annotation
 	@FindBy(xpath="//div[2]/div[1]//div[2]//a/small")
 	private WebElement customerfront;      
 	@FindBy(xpath="//input[@placeholder='Email']")

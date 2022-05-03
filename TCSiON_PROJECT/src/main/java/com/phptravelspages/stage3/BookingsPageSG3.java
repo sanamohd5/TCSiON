@@ -96,11 +96,9 @@ public class BookingsPageSG3 {
   	   
  	   }
     public void setBookingStatusCC()   {    
-//    	confirmed.click();
-//    	cancelled.sendKeys(Keys.RETURN);
     	Select drop=new Select(confirmed);
     	drop.selectByVisibleText("Cancelled");
-  	  // drop.selectByVisibleText(strBookingStatus);
+  
   	   
  	   }
     
@@ -145,8 +143,6 @@ public class BookingsPageSG3 {
 	}
 
 	 public void viewWebsite() throws InterruptedException { 
-		// WebDriverWait wait=new WebDriverWait(driver,10);	  
-    	// wait.until(ExpectedConditions.elementToBeClickable(website));
 		 website.click();		 	
 		 WebDriverWait wait=new WebDriverWait(driver,10);	  
 	     wait.until(ExpectedConditions.visibilityOf(website));

@@ -12,9 +12,7 @@ public class LoginPageSG3 {
 	
 	WebDriver driver;
 	@FindBy(xpath="//div[4]/div//div[2]//a/small")
-	private WebElement adminback;
-//	@FindBy(xpath="//header/div[1]//div[2]//a[2]")
-//    private WebElement Login;    
+	private WebElement adminback; 
 	@FindBy(xpath="//input[@type='text']")
     private WebElement email;    
 	@FindBy(xpath="//input[@type='password']")

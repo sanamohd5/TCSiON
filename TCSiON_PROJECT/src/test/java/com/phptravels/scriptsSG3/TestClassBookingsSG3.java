@@ -22,7 +22,6 @@ public class TestClassBookingsSG3 extends TestBase{
 		
 	@Test(priority = 7)
 	public void VerifyPendingToConfirm() throws InterruptedException, IOException {	
-		//objBookings.clickPendingBook();
 		String PendingBC=objBookings.setPendingBookCount();		
 		String zero="0";
 		
@@ -37,24 +36,18 @@ public class TestClassBookingsSG3 extends TestBase{
 			driver.navigate().refresh();
 			String ConfirmBC=objBookings.setConfirmBookCount();
 			System.out.println("verifying pending to confirm, so confirmed Bookings Count changed to: "+ConfirmBC);
-//			driver.navigate().refresh();
-//			//objBookings.clickPendingBook();
-//			objBookings.setPendingBookCount();
-//			System.out.println("Pending Bookings Count2: "+PendingBC);
+
 		}
 	}
 	@Test(priority = 8)
 	public void VerifyDeleteCancelledBookings() throws IOException, InterruptedException {
 				
-	//	String bookingstatus = ExcelUtility.getCellData3(10, 1);
+	
 		Thread.sleep(2000);
-	// objBookings.setBookingStatusCC(bookingstatus);
-	//	objBookings.clickCancelledBook();
 		String CancelBC=objBookings.setCancelledBookCount();
 		String zero="0";
 		
 		if(CancelBC.contains(zero)) {
-		//	System.out.println("Changing confirm to cancel ");
 			objBookings.clickConfirmBook();
 			Thread.sleep(2000);
 			objBookings.setBookingStatusCC();
@@ -70,7 +63,6 @@ public class TestClassBookingsSG3 extends TestBase{
 			System.out.println("Cancelled Bookings Count: "+CancelBC);
 			objBookings.clickCancelledBook();
 			objBookings.clickDelete();			
-		//Thread.sleep(2000);
 		// not deleting the booking, because other users need it
 		driver.switchTo().alert().dismiss();
 		}
@@ -87,9 +79,8 @@ public class TestClassBookingsSG3 extends TestBase{
 			
 		}
 		else {
-		//	objBookings.setPendingBookCount();
+		
 			objBookings.setCancelledBookCount();
-		//	System.out.println("Pending Bookings Count: "+ CancelledBC);
 			System.out.println("Cancelled Bookings Count: "+ CancelledBC);
 			objBookings.clickCancelledBook();
 			Thread.sleep(2000);
@@ -122,7 +113,7 @@ public class TestClassBookingsSG3 extends TestBase{
 
 		}
 	}
-	@Test(priority=11)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=11)   
 	public void verifyWebsiteLink() throws IOException, InterruptedException {  
 		objBookings = new BookingsPageSG3(driver);
 		driver.getCurrentUrl();
@@ -131,7 +122,7 @@ public class TestClassBookingsSG3 extends TestBase{
 		String actualTitle = driver.getTitle();
 		System.out.println("Website Title: "+actualTitle);		
 		String expectedTitle =AutomationConstants.WEBSITE_TITLE;
-				//("https://www.phptravels.net/");
+				
 		Assert.assertEquals(actualTitle,expectedTitle);
 	}
 }

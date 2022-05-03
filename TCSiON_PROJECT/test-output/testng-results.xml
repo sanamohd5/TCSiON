@@ -1,177 +1,188 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="16" passed="10" failed="0" skipped="0">
+<testng-results ignored="2" total="13" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-05-02T01:04:58 IST" name="Suite" finished-at="2022-05-02T01:05:44 IST" duration-ms="45902">
+  <suite started-at="2022-05-03T23:06:33 IST" name="Suite" finished-at="2022-05-03T23:07:36 IST" duration-ms="62589">
     <groups>
     </groups>
-    <test started-at="2022-05-02T01:04:58 IST" name="Test" finished-at="2022-05-02T01:05:44 IST" duration-ms="45902">
-      <class name="com.phptravels.scriptsSG1.TestClassMyBookingsSG1">
-        <test-method signature="verifyMyBookings()[pri:6, instance:com.phptravels.scriptsSG1.TestClassMyBookingsSG1@27f981c6]" started-at="2022-05-02T01:05:23 IST" name="verifyMyBookings" finished-at="2022-05-02T01:05:26 IST" duration-ms="3862" status="PASS">
+    <test started-at="2022-05-03T23:06:33 IST" name="Test" finished-at="2022-05-03T23:07:36 IST" duration-ms="62589">
+      <class name="com.phptravels.scriptsSG3.TestClassBookingsSG3">
+        <test-method signature="verifyBookings()[pri:6, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:03 IST" name="verifyBookings" finished-at="2022-05-03T23:07:05 IST" duration-ms="1594" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMyBookings -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassMyBookingsSG1@27f981c6]" started-at="2022-05-02T01:05:26 IST" name="tearDown" finished-at="2022-05-02T01:05:26 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyBookings -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:05 IST" name="tearDown" finished-at="2022-05-03T23:07:05 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMyBookings status=SUCCESS method=TestClassMyBookingsSG1.verifyMyBookings()[pri:6, instance:com.phptravels.scriptsSG1.TestClassMyBookingsSG1@27f981c6] output={null}]]]>
+                <![CDATA[[TestResult name=verifyBookings status=SUCCESS method=TestClassBookingsSG3.verifyBookings()[pri:6, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.phptravels.scriptsSG1.TestClassMyBookingsSG1 -->
-      <class name="com.phptravels.scriptsSG1.TestClassMyProfileSG1">
-        <test-method signature="verifyMyProfile()[pri:8, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b]" started-at="2022-05-02T01:05:35 IST" name="verifyMyProfile" finished-at="2022-05-02T01:05:36 IST" duration-ms="1279" status="PASS">
+        <test-method signature="VerifyPendingToConfirm()[pri:7, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:05 IST" name="VerifyPendingToConfirm" finished-at="2022-05-03T23:07:06 IST" duration-ms="1590" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyMyProfile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b]" started-at="2022-05-02T01:05:36 IST" name="tearDown" finished-at="2022-05-02T01:05:36 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- VerifyPendingToConfirm -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:06 IST" name="tearDown" finished-at="2022-05-03T23:07:06 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyMyProfile status=SUCCESS method=TestClassMyProfileSG1.verifyMyProfile()[pri:8, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyPendingToConfirm status=SUCCESS method=TestClassBookingsSG3.VerifyPendingToConfirm()[pri:7, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="UpdateAddress()[pri:9, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b]" started-at="2022-05-02T01:05:36 IST" name="UpdateAddress" finished-at="2022-05-02T01:05:40 IST" duration-ms="3618" status="PASS">
+        <test-method signature="VerifyDeleteCancelledBookings()[pri:8, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:06 IST" name="VerifyDeleteCancelledBookings" finished-at="2022-05-03T23:07:17 IST" duration-ms="10910" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UpdateAddress -->
-        <test-method signature="verifyLogout()[pri:10, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b]" started-at="2022-05-02T01:05:40 IST" name="verifyLogout" finished-at="2022-05-02T01:05:41 IST" duration-ms="1461" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLogout -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b]" started-at="2022-05-02T01:05:40 IST" name="tearDown" finished-at="2022-05-02T01:05:40 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- VerifyDeleteCancelledBookings -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:17 IST" name="tearDown" finished-at="2022-05-03T23:07:17 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UpdateAddress status=SUCCESS method=TestClassMyProfileSG1.UpdateAddress()[pri:9, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyDeleteCancelledBookings status=SUCCESS method=TestClassBookingsSG3.VerifyDeleteCancelledBookings()[pri:8, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b]" started-at="2022-05-02T01:05:41 IST" name="tearDown" finished-at="2022-05-02T01:05:41 IST" duration-ms="0" status="PASS">
+        <test-method signature="RevertChanges()[pri:9, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:17 IST" name="RevertChanges" finished-at="2022-05-03T23:07:22 IST" duration-ms="5257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RevertChanges -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:22 IST" name="tearDown" finished-at="2022-05-03T23:07:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLogout status=SUCCESS method=TestClassMyProfileSG1.verifyLogout()[pri:10, instance:com.phptravels.scriptsSG1.TestClassMyProfileSG1@4659191b] output={null}]]]>
+                <![CDATA[[TestResult name=RevertChanges status=SUCCESS method=TestClassBookingsSG3.RevertChanges()[pri:9, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.phptravels.scriptsSG1.TestClassMyProfileSG1 -->
-      <class name="com.phptravels.scriptsSG1.TestClassLoginSG1">
-        <test-method is-config="true" signature="onSetup()[pri:0, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:04:58 IST" name="onSetup" finished-at="2022-05-02T01:05:07 IST" duration-ms="9489" status="PASS">
+        <test-method signature="VerifyInvoicePaidBookings()[pri:10, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:22 IST" name="VerifyInvoicePaidBookings" finished-at="2022-05-03T23:07:28 IST" duration-ms="5705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyInvoicePaidBookings -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:28 IST" name="tearDown" finished-at="2022-05-03T23:07:28 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=VerifyInvoicePaidBookings status=SUCCESS method=TestClassBookingsSG3.VerifyInvoicePaidBookings()[pri:10, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyWebsiteLink()[pri:11, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:28 IST" name="verifyWebsiteLink" finished-at="2022-05-03T23:07:32 IST" duration-ms="3998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWebsiteLink -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f]" started-at="2022-05-03T23:07:32 IST" name="tearDown" finished-at="2022-05-03T23:07:32 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyWebsiteLink status=SUCCESS method=TestClassBookingsSG3.verifyWebsiteLink()[pri:11, instance:com.phptravels.scriptsSG3.TestClassBookingsSG3@1b11171f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.phptravels.scriptsSG3.TestClassBookingsSG3 -->
+      <class name="com.phptravels.scriptsSG3.TestClassLoginSG3">
+        <test-method is-config="true" signature="onSetup()[pri:0, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:33 IST" name="onSetup" finished-at="2022-05-03T23:06:42 IST" duration-ms="9100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onSetup -->
-        <test-method signature="verifyIeVp()[pri:1, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:07 IST" name="verifyIeVp" finished-at="2022-05-02T01:05:14 IST" duration-ms="6948" status="PASS">
+        <test-method signature="verifyIeVp()[pri:1, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:42 IST" name="verifyIeVp" finished-at="2022-05-03T23:06:48 IST" duration-ms="6300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIeVp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:14 IST" name="tearDown" finished-at="2022-05-02T01:05:14 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:48 IST" name="tearDown" finished-at="2022-05-03T23:06:48 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyIeVp status=SUCCESS method=TestClassLoginSG1.verifyIeVp()[pri:1, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487] output={null}]]]>
+                <![CDATA[[TestResult name=verifyIeVp status=SUCCESS method=TestClassLoginSG3.verifyIeVp()[pri:1, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="verifyVeIp()[pri:2, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:14 IST" name="verifyVeIp" finished-at="2022-05-02T01:05:17 IST" duration-ms="2277" status="PASS">
+        <test-method signature="verifyVeIp()[pri:2, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:48 IST" name="verifyVeIp" finished-at="2022-05-03T23:06:51 IST" duration-ms="2577" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyVeIp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:17 IST" name="tearDown" finished-at="2022-05-02T01:05:17 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:51 IST" name="tearDown" finished-at="2022-05-03T23:06:51 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyVeIp status=SUCCESS method=TestClassLoginSG1.verifyVeIp()[pri:2, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487] output={null}]]]>
+                <![CDATA[[TestResult name=verifyVeIp status=SUCCESS method=TestClassLoginSG3.verifyVeIp()[pri:2, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="verifyIeIp()[pri:3, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:17 IST" name="verifyIeIp" finished-at="2022-05-02T01:05:19 IST" duration-ms="2221" status="PASS">
+        <test-method signature="verifyIeIp()[pri:3, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:51 IST" name="verifyIeIp" finished-at="2022-05-03T23:06:53 IST" duration-ms="2421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyIeIp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:19 IST" name="tearDown" finished-at="2022-05-02T01:05:19 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:53 IST" name="tearDown" finished-at="2022-05-03T23:06:53 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyIeIp status=SUCCESS method=TestClassLoginSG1.verifyIeIp()[pri:3, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487] output={null}]]]>
+                <![CDATA[[TestResult name=verifyIeIp status=SUCCESS method=TestClassLoginSG3.verifyIeIp()[pri:3, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="verifyNeNp()[pri:4, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:19 IST" name="verifyNeNp" finished-at="2022-05-02T01:05:20 IST" duration-ms="1226" status="PASS">
+        <test-method signature="verifyNeNp()[pri:4, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:53 IST" name="verifyNeNp" finished-at="2022-05-03T23:06:56 IST" duration-ms="2331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNeNp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:20 IST" name="tearDown" finished-at="2022-05-02T01:05:20 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:56 IST" name="tearDown" finished-at="2022-05-03T23:06:56 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyNeNp status=SUCCESS method=TestClassLoginSG1.verifyNeNp()[pri:4, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNeNp status=SUCCESS method=TestClassLoginSG3.verifyNeNp()[pri:4, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="verifyVeVp()[pri:5, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:20 IST" name="verifyVeVp" finished-at="2022-05-02T01:05:23 IST" duration-ms="2410" status="PASS">
+        <test-method signature="verifyVeVp()[pri:5, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:06:56 IST" name="verifyVeVp" finished-at="2022-05-03T23:07:03 IST" duration-ms="7131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyVeVp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:23 IST" name="tearDown" finished-at="2022-05-02T01:05:23 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:07:03 IST" name="tearDown" finished-at="2022-05-03T23:07:03 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyVeVp status=SUCCESS method=TestClassLoginSG1.verifyVeVp()[pri:5, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487] output={null}]]]>
+                <![CDATA[[TestResult name=verifyVeVp status=SUCCESS method=TestClassLoginSG3.verifyVeVp()[pri:5, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.phptravels.scriptsSG1.TestClassLoginSG1@47e2e487]" started-at="2022-05-02T01:05:41 IST" name="quitBrowser" finished-at="2022-05-02T01:05:44 IST" duration-ms="2843" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.phptravels.scriptsSG3.TestClassLoginSG3@51e69659]" started-at="2022-05-03T23:07:32 IST" name="quitBrowser" finished-at="2022-05-03T23:07:36 IST" duration-ms="3561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->
-      </class> <!-- com.phptravels.scriptsSG1.TestClassLoginSG1 -->
-      <class name="com.phptravels.scriptsSG1.TestClassAddFundsSG1">
-        <test-method signature="verifyAddFunds()[pri:7, instance:com.phptravels.scriptsSG1.TestClassAddFundsSG1@1b11171f]" started-at="2022-05-02T01:05:26 IST" name="verifyAddFunds" finished-at="2022-05-02T01:05:35 IST" duration-ms="8180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddFunds -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.phptravels.scriptsSG1.TestClassAddFundsSG1@1b11171f]" started-at="2022-05-02T01:05:35 IST" name="tearDown" finished-at="2022-05-02T01:05:35 IST" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyAddFunds status=SUCCESS method=TestClassAddFundsSG1.verifyAddFunds()[pri:7, instance:com.phptravels.scriptsSG1.TestClassAddFundsSG1@1b11171f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.phptravels.scriptsSG1.TestClassAddFundsSG1 -->
+      </class> <!-- com.phptravels.scriptsSG3.TestClassLoginSG3 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
