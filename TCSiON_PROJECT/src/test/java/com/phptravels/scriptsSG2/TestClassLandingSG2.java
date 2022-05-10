@@ -1,7 +1,6 @@
 package com.phptravels.scriptsSG2;
 
 import java.io.IOException;
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +11,7 @@ import com.phptravelspages.stage2.LandingPageSG2;
 public class TestClassLandingSG2 extends TestBase {
 	LandingPageSG2 objLand;
 	
-	@Test(priority=6)  
+	@Test(priority=6)  //Verifying Home Button
 	public void verifyHome() throws IOException {  
 		//Create Landing Page object
 		objLand= new LandingPageSG2(driver);
@@ -23,7 +22,7 @@ public class TestClassLandingSG2 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);	 				    
 	    }
 	
-	@Test(priority=7)   
+	@Test(priority=7)   //Verifying Hotel Search by entering data 
 	public void verifyHotelSearch() throws IOException, InterruptedException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.clickHotels();
@@ -44,7 +43,7 @@ public class TestClassLandingSG2 extends TestBase {
 	    Assert.assertEquals(expectedTitle2,actualTitle2);	
 	    }
 	
-	@Test(priority=8)   
+	@Test(priority=8)   //Verifying Flights Button
 	public void verifyFlights() throws IOException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.clickFlights();
@@ -54,7 +53,7 @@ public class TestClassLandingSG2 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);	 				    
 	    }
 	
-	@Test(priority=9)   
+	@Test(priority=9)   //Verifying Tours Button
 	public void verifyTours() throws IOException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.clickTours();
@@ -64,7 +63,7 @@ public class TestClassLandingSG2 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);	 				    
 	    }
 	
-	@Test(priority=10)   
+	@Test(priority=10)   //Verifying Visa Button
 	public void verifyVisa() throws IOException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.clickVisa();
@@ -74,7 +73,7 @@ public class TestClassLandingSG2 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);	 				    
 	    }
 	
-	@Test(priority=11)   
+	@Test(priority=11)   //Verifying Blog Button
 	public void verifyBlogs() throws IOException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.clickBlog();
@@ -84,7 +83,7 @@ public class TestClassLandingSG2 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);	 				    
 	    }
 	
-	@Test(priority=12)   
+	@Test(priority=12)   //Verifying Offers Button
 	public void verifyOffers() throws IOException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.clickOffers();
@@ -94,13 +93,13 @@ public class TestClassLandingSG2 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);	 				    
 	    }
 	
-	@Test(priority=13)   
+	@Test(priority=13)   //Update USD to INR
 	public void verifyCurrencyUpdate() throws IOException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.setCurrency();
 	}
 	
-	@Test(priority=14)   
+	@Test(priority=14)  //Verifying links functionalities
 	public void verifylinks() throws IOException {  
 		objLand= new LandingPageSG2(driver);
 		objLand.setAccount();
@@ -109,4 +108,5 @@ public class TestClassLandingSG2 extends TestBase {
 		objLand.clickMyProfile();
 		objLand.clickLogout();
 	}
+	
 }

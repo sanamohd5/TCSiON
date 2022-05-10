@@ -15,7 +15,7 @@ public class TestClassLoginSG4 extends TestBase {
 	
 	LoginPageSG4 objLogin;
 	
-	@Test(priority=1)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=1)   //Verifying invalid email and valid password
 	public void verifyIeVp() throws IOException {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);
@@ -33,7 +33,7 @@ public class TestClassLoginSG4 extends TestBase {
 	 				    
 	    }
 	
-	@Test(priority=2)   //Verifying valid username and invalid password by selecting 
+	@Test(priority=2)   //Verifying valid email and invalid password
 	public void verifyVeIp() throws IOException {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);
@@ -51,7 +51,7 @@ public class TestClassLoginSG4 extends TestBase {
 			    
 	    }
 	
-	@Test(priority=3)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=3)   //Verifying invalid email and invalid password
 	public void verifyIeIp() throws IOException {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);		
@@ -68,7 +68,7 @@ public class TestClassLoginSG4 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);
 	    }
 	    
-	@Test(priority=4)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=4)   //Verifying null email and null password
 	public void verifyNeNp() throws IOException {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);
@@ -85,7 +85,7 @@ public class TestClassLoginSG4 extends TestBase {
 	    Assert.assertEquals(expectedTitle,actualTitle);			    
 	    }
 	 
-	@Test(priority=5)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=5)   //Verifying valid email and valid password
 	public void verifyVeVp() throws IOException, InterruptedException  {  
 		//Create Login Page object	   
 		objLogin = new LoginPageSG4(driver);
@@ -101,7 +101,5 @@ public class TestClassLoginSG4 extends TestBase {
 	    System.out.println(actualTitle);
 	    String expectedTitle =AutomationConstants.SUPPLIER_LOGIN_TITLE;
 	    Assert.assertEquals(expectedTitle,actualTitle);
-	  
-}
-
-}
+	    }
+	}

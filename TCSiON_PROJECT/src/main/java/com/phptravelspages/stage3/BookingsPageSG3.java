@@ -13,6 +13,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BookingsPageSG3 {
+//	All WebElements are identified by @FindBy annotation
 	WebDriver driver;
 	
 	@FindBy(xpath="//a[@class='nav-link loadeffect']")
@@ -50,7 +51,7 @@ public class BookingsPageSG3 {
 		
 	public BookingsPageSG3(WebDriver driver) {    
     	this.driver = driver;    
-        PageFactory.initElements(driver, this); 
+        PageFactory.initElements(driver, this); //This initElements method will create all WebElements
         }        
     public void clickBookings() {
     	bookings.click();
@@ -88,8 +89,6 @@ public class BookingsPageSG3 {
 
 }
     
-
-
     public void setBookingStatusPC(String strBookingStatus)   {    
     	Select drop=new Select(pending);
     	 drop.selectByVisibleText(strBookingStatus);

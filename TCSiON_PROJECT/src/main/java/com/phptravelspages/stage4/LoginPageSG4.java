@@ -12,6 +12,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageSG4 {
 	
+//	All WebElements are identified by @FindBy annotation
+	
 	WebDriver driver;
 	@FindBy(xpath="//div[5]//div[1]/a/small")
 	private WebElement supplierback;   
@@ -25,7 +27,7 @@ public class LoginPageSG4 {
     
     public LoginPageSG4(WebDriver driver) {    
     	this.driver = driver;    
-        PageFactory.initElements(driver, this); 
+        PageFactory.initElements(driver, this); //This initElements method will create all WebElements
         }        
     public void clickSupplierBack() {
     	supplierback.click();
@@ -50,8 +52,8 @@ public class LoginPageSG4 {
  	   }
 
     public void clickLoginButton() {
-    	 WebDriverWait wait=new WebDriverWait(driver,10);	  
-    	 wait.until(ExpectedConditions.elementToBeClickable(LoginButton));
+    	WebDriverWait wait=new WebDriverWait(driver,10);	  
+    	wait.until(ExpectedConditions.elementToBeClickable(LoginButton));
     	LoginButton.click();
 	
     	} 

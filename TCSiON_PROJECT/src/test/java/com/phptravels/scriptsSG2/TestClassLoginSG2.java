@@ -16,7 +16,7 @@ public class TestClassLoginSG2 extends TestBase {
 	
 		@Test(priority=1)   //Verifying invalid email and valid password 
 		public void verifyIeVp() throws IOException {  
-			//Create Login Page object	   
+			//Create Login Page object	 
 			objLogin = new LoginPageSG2(driver);
 			objLogin.clickAgentFront();
 		    objLogin.redirectAgentPage(); 

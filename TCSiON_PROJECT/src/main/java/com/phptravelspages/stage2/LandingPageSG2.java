@@ -8,8 +8,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LandingPageSG2 {
+	
+//	All WebElements are identified by @FindBy annotation
+	
 	WebDriver driver;
-
 	@FindBy(xpath="//nav/ul/li[1]/a")
     private WebElement home;
 	@FindBy(xpath="//nav/ul/li[2]/a")
@@ -45,14 +47,13 @@ public class LandingPageSG2 {
 	@FindBy(xpath="//input[@type='search']")
 	private WebElement searchbyinput;
 	@FindBy(xpath="//*[@id=\"select2-hotels_city-results\"]/li")
-	private WebElement selectfromdrop;
-	
+	private WebElement selectfromdrop;	
 	@FindBy(xpath="//*[@id=\"submit\"]/span[1]")
 	private WebElement searchbutton;
 	
     public LandingPageSG2(WebDriver driver) {    
     	this.driver = driver;    
-        PageFactory.initElements(driver, this); 
+        PageFactory.initElements(driver, this); //This initElements method will create all WebElements
         }        
     public void clickHome() {
     	WebDriverWait wait=new WebDriverWait(driver,5);	  
@@ -78,15 +79,15 @@ public class LandingPageSG2 {
     	offers.click();
     	}
 
-    public void setCurrency()   {    
+    public void setCurrency()  {    
     	currency.click();
          inr.click();
- 	   }
+         }
 
     public void setAccount() {
     	account.click();
     	ddmybookings.click();
-    }
+    	}
     public void clickMyBookings() {
     	mybookings.click();
     	}

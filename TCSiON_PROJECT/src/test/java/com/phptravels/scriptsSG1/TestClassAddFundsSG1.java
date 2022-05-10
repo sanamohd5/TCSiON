@@ -10,8 +10,10 @@ import com.phptravels.testbase.TestBase;
 import com.phptravelspages.stage1.AddFundsPageSG1;
 
 public class TestClassAddFundsSG1 extends TestBase {
+	
 	AddFundsPageSG1 objAddFunds;
-	@Test(priority=7)  
+	
+	@Test(priority=7)  //Verifying automated payment using PayPal
 	public void verifyAddFunds() throws IOException, InterruptedException {  
 		objAddFunds =new AddFundsPageSG1(driver);
 		objAddFunds.clickAddFunds();

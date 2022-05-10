@@ -13,7 +13,9 @@ import com.phptravelspages.stage1.LoginPageSG1;
 
 
 public class TestClassLoginSG1 extends TestBase {
+	
 	LoginPageSG1 objLogin;
+	
 	@Test(priority=1)   //Verifying invalid email and valid password 
 	public void verifyIeVp() throws IOException {  	   
 		objLogin = new LoginPageSG1(driver);   //Create Login Page object	
@@ -45,7 +47,6 @@ public class TestClassLoginSG1 extends TestBase {
 	    String actualTitle = driver.getTitle();
 	    System.out.println(actualTitle);
 	    Assert.assertEquals(expectedTitle,actualTitle);
-
 	   			    
 	    }
 	

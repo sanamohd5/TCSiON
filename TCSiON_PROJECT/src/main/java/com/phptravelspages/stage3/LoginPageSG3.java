@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPageSG3 {
 	
+//	All WebElements are identified by @FindBy annotation
+	
 	WebDriver driver;
 	@FindBy(xpath="//div[4]/div//div[2]//a/small")
 	private WebElement adminback; 
@@ -23,7 +25,7 @@ public class LoginPageSG3 {
     
     public LoginPageSG3(WebDriver driver) {    
     	this.driver = driver;    
-        PageFactory.initElements(driver, this); 
+        PageFactory.initElements(driver, this);   //This initElements method will create all WebElements
         }        
     public void clickAdminBack() {
     	adminback.click();
@@ -32,7 +34,6 @@ public class LoginPageSG3 {
 	   	 ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
 	   	 driver.switchTo().window(tabs.get(1));
 	    }
-
 
     public void setEmail(String strEmail){
  	   email.sendKeys(strEmail);          
@@ -50,8 +51,8 @@ public class LoginPageSG3 {
  	   }
 
     public BookingsPageSG3 clickLoginButton() {
-    	 WebDriverWait wait=new WebDriverWait(driver,10);	  
-    	 wait.until(ExpectedConditions.elementToBeClickable(LoginButton));
+    	WebDriverWait wait=new WebDriverWait(driver,5);	  
+    	wait.until(ExpectedConditions.elementToBeClickable(LoginButton));
     	LoginButton.click();
 		return new BookingsPageSG3(driver);
     	} 

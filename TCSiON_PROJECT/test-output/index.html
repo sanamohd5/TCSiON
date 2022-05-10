@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\DELL\Desktop\Workspace_TCSiON\TCSiON\TCSiON_PROJECT\testngsg3.xml</span>
+                    <span>C:\Users\DELL\Desktop\Workspace_TCSiON\TCSiON\TCSiON_PROJECT\testngsg2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLoginSG2" class="method navigator-link" hash-for-method="verifyVeVp">verifyVeVp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifylinks">verifylinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,57 +123,62 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassBookingsSG3" class="method navigator-link" hash-for-method="RevertChanges">RevertChanges</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyBlogs">verifyBlogs</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassBookingsSG3" class="method navigator-link" hash-for-method="VerifyDeleteCancelledBookings">VerifyDeleteCancelledBookings</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyCurrencyUpdate">verifyCurrencyUpdate</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassBookingsSG3" class="method navigator-link" hash-for-method="VerifyInvoicePaidBookings">VerifyInvoicePaidBookings</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyFlights">verifyFlights</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassBookingsSG3" class="method navigator-link" hash-for-method="VerifyPendingToConfirm">VerifyPendingToConfirm</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyHome">verifyHome</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassBookingsSG3" class="method navigator-link" hash-for-method="verifyBookings">verifyBookings</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyHotelSearch">verifyHotelSearch</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassLoginSG3" class="method navigator-link" hash-for-method="verifyIeIp">verifyIeIp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLoginSG2" class="method navigator-link" hash-for-method="verifyIeIp">verifyIeIp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassLoginSG3" class="method navigator-link" hash-for-method="verifyIeVp">verifyIeVp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLoginSG2" class="method navigator-link" hash-for-method="verifyIeVp">verifyIeVp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassLoginSG3" class="method navigator-link" hash-for-method="verifyNeNp">verifyNeNp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLoginSG2" class="method navigator-link" hash-for-method="verifyNeNp">verifyNeNp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassLoginSG3" class="method navigator-link" hash-for-method="verifyVeIp">verifyVeIp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyOffers">verifyOffers</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassLoginSG3" class="method navigator-link" hash-for-method="verifyVeVp">verifyVeVp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyTours">verifyTours</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG3.TestClassBookingsSG3" class="method navigator-link" hash-for-method="verifyWebsiteLink">verifyWebsiteLink</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLoginSG2" class="method navigator-link" hash-for-method="verifyVeIp">verifyVeIp</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.phptravels.scriptsSG2.TestClassLandingSG2" class="method navigator-link" hash-for-method="verifyVisa">verifyVisa</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -169,52 +193,118 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.phptravels.scriptsSG3.TestClassBookingsSG3</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.phptravels.scriptsSG2.TestClassLandingSG2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RevertChanges">
-                  </a> <!-- RevertChanges -->
-                  <span class="method-name">RevertChanges</span>
+                  <a name="verifylinks">
+                  </a> <!-- verifylinks -->
+                  <span class="method-name">verifylinks</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//div[1]/div/div[3]/ul/li[2]/a
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-729RCR4&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.14&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.phptravelspages.stage2.LandingPageSG2.clickMyBookings(LandingPageSG2.java:92)
+	at com.phptravels.scriptsSG2.TestClassLandingSG2.verifylinks(TestClassLandingSG2.java:106)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.phptravels.scriptsSG2.TestClassLoginSG2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVeVp">
+                  </a> <!-- verifyVeVp -->
+                  <span class="method-name">verifyVeVp</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Login - PHPTRAVELS] but found [Dashboard - PHPTRAVELS]
+	at com.phptravels.scriptsSG2.TestClassLoginSG2.verifyVeVp(TestClassLoginSG2.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.phptravels.scriptsSG2.TestClassLandingSG2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBlogs">
+                  </a> <!-- verifyBlogs -->
+                  <span class="method-name">verifyBlogs</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyDeleteCancelledBookings">
-                  </a> <!-- VerifyDeleteCancelledBookings -->
-                  <span class="method-name">VerifyDeleteCancelledBookings</span>
+                  <a name="verifyCurrencyUpdate">
+                  </a> <!-- verifyCurrencyUpdate -->
+                  <span class="method-name">verifyCurrencyUpdate</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyInvoicePaidBookings">
-                  </a> <!-- VerifyInvoicePaidBookings -->
-                  <span class="method-name">VerifyInvoicePaidBookings</span>
+                  <a name="verifyFlights">
+                  </a> <!-- verifyFlights -->
+                  <span class="method-name">verifyFlights</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="VerifyPendingToConfirm">
-                  </a> <!-- VerifyPendingToConfirm -->
-                  <span class="method-name">VerifyPendingToConfirm</span>
+                  <a name="verifyHome">
+                  </a> <!-- verifyHome -->
+                  <span class="method-name">verifyHome</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyBookings">
-                  </a> <!-- verifyBookings -->
-                  <span class="method-name">verifyBookings</span>
+                  <a name="verifyHotelSearch">
+                  </a> <!-- verifyHotelSearch -->
+                  <span class="method-name">verifyHotelSearch</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyWebsiteLink">
-                  </a> <!-- verifyWebsiteLink -->
-                  <span class="method-name">verifyWebsiteLink</span>
+                  <a name="verifyOffers">
+                  </a> <!-- verifyOffers -->
+                  <span class="method-name">verifyOffers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyTours">
+                  </a> <!-- verifyTours -->
+                  <span class="method-name">verifyTours</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVisa">
+                  </a> <!-- verifyVisa -->
+                  <span class="method-name">verifyVisa</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,7 +312,7 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.phptravels.scriptsSG3.TestClassLoginSG3</span>
+              <span class="class-name">com.phptravels.scriptsSG2.TestClassLoginSG2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -253,19 +343,12 @@
                   <span class="method-name">verifyVeIp</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyVeVp">
-                  </a> <!-- verifyVeVp -->
-                  <span class="method-name">verifyVeVp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\Desktop\Workspace_TCSiON\TCSiON\TCSiON_PROJECT\testngsg3.xml</span>
+            <span class="header-content">C:\Users\DELL\Desktop\Workspace_TCSiON\TCSiON\TCSiON_PROJECT\testngsg2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -274,8 +357,8 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.phptravels.scriptsSG3.TestClassLoginSG3&quot;/&gt;
-      &lt;class name=&quot;com.phptravels.scriptsSG3.TestClassBookingsSG3&quot;/&gt;
+      &lt;class name=&quot;com.phptravels.scriptsSG2.TestClassLoginSG2&quot;/&gt;
+      &lt;class name=&quot;com.phptravels.scriptsSG2.TestClassLandingSG2&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -315,51 +398,63 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(11);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'VerifyDeleteCancelledBookings')
-data.setCell(0, 2, 'com.phptravels.scriptsSG3.TestClassBookingsSG3')
-data.setCell(0, 3, 10910);
+data.setCell(0, 1, 'verifyHotelSearch')
+data.setCell(0, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(0, 3, 9950);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyVeVp')
-data.setCell(1, 2, 'com.phptravels.scriptsSG3.TestClassLoginSG3')
-data.setCell(1, 3, 7131);
+data.setCell(1, 1, 'verifylinks')
+data.setCell(1, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(1, 3, 8869);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyIeVp')
-data.setCell(2, 2, 'com.phptravels.scriptsSG3.TestClassLoginSG3')
-data.setCell(2, 3, 6300);
+data.setCell(2, 2, 'com.phptravels.scriptsSG2.TestClassLoginSG2')
+data.setCell(2, 3, 8792);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'VerifyInvoicePaidBookings')
-data.setCell(3, 2, 'com.phptravels.scriptsSG3.TestClassBookingsSG3')
-data.setCell(3, 3, 5705);
+data.setCell(3, 1, 'verifyCurrencyUpdate')
+data.setCell(3, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(3, 3, 2927);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'RevertChanges')
-data.setCell(4, 2, 'com.phptravels.scriptsSG3.TestClassBookingsSG3')
-data.setCell(4, 3, 5257);
+data.setCell(4, 1, 'verifyHome')
+data.setCell(4, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(4, 3, 2855);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyWebsiteLink')
-data.setCell(5, 2, 'com.phptravels.scriptsSG3.TestClassBookingsSG3')
-data.setCell(5, 3, 3998);
+data.setCell(5, 1, 'verifyVeVp')
+data.setCell(5, 2, 'com.phptravels.scriptsSG2.TestClassLoginSG2')
+data.setCell(5, 3, 2551);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'verifyVeIp')
-data.setCell(6, 2, 'com.phptravels.scriptsSG3.TestClassLoginSG3')
-data.setCell(6, 3, 2577);
+data.setCell(6, 2, 'com.phptravels.scriptsSG2.TestClassLoginSG2')
+data.setCell(6, 3, 2482);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyIeIp')
-data.setCell(7, 2, 'com.phptravels.scriptsSG3.TestClassLoginSG3')
-data.setCell(7, 3, 2421);
+data.setCell(7, 2, 'com.phptravels.scriptsSG2.TestClassLoginSG2')
+data.setCell(7, 3, 2352);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyNeNp')
-data.setCell(8, 2, 'com.phptravels.scriptsSG3.TestClassLoginSG3')
-data.setCell(8, 3, 2331);
+data.setCell(8, 1, 'verifyOffers')
+data.setCell(8, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(8, 3, 2183);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyBookings')
-data.setCell(9, 2, 'com.phptravels.scriptsSG3.TestClassBookingsSG3')
-data.setCell(9, 3, 1594);
+data.setCell(9, 1, 'verifyBlogs')
+data.setCell(9, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(9, 3, 2092);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'VerifyPendingToConfirm')
-data.setCell(10, 2, 'com.phptravels.scriptsSG3.TestClassBookingsSG3')
-data.setCell(10, 3, 1590);
+data.setCell(10, 1, 'verifyFlights')
+data.setCell(10, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(10, 3, 1132);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyVisa')
+data.setCell(11, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(11, 3, 1081);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyTours')
+data.setCell(12, 2, 'com.phptravels.scriptsSG2.TestClassLandingSG2')
+data.setCell(12, 3, 1053);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyNeNp')
+data.setCell(13, 2, 'com.phptravels.scriptsSG2.TestClassLoginSG2')
+data.setCell(13, 3, 818);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -383,7 +478,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.phptravels.scriptsSG3.TestClassBookingsSG3</span>
+              <span class="ignored-class-name">com.phptravels.scriptsSG2.TestClassLandingSG2</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">quitBrowser</span>
                 <br/>
@@ -399,108 +494,80 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.phptravels.scriptsSG3.TestClassLoginSG3</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.phptravels.scriptsSG2.TestClassLoginSG2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">onSetup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifyIeVp</span>
-                <span class="method-start">9150 ms</span>
+                <span class="method-start">11672 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyIeVp status=SUCCESS method=TestClassLoginSG3.verifyIeVp()[pri:1, instance:com...)</span>
-                <span class="method-start">15453 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyVeIp</span>
-                <span class="method-start">15461 ms</span>
+                <span class="method-start">21742 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyVeIp status=SUCCESS method=TestClassLoginSG3.verifyVeIp()[pri:2, instance:com...)</span>
-                <span class="method-start">18040 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyIeIp</span>
-                <span class="method-start">18041 ms</span>
+                <span class="method-start">24229 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyIeIp status=SUCCESS method=TestClassLoginSG3.verifyIeIp()[pri:3, instance:com...)</span>
-                <span class="method-start">20463 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verifyNeNp</span>
-                <span class="method-start">20464 ms</span>
+                <span class="method-start">26584 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyNeNp status=SUCCESS method=TestClassLoginSG3.verifyNeNp()[pri:4, instance:com...)</span>
-                <span class="method-start">22796 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyVeVp</span>
-                <span class="method-start">22798 ms</span>
+                <span class="method-start">27403 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyVeVp status=SUCCESS method=TestClassLoginSG3.verifyVeVp()[pri:5, instance:com...)</span>
-                <span class="method-start">29930 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.phptravels.scriptsSG3.TestClassBookingsSG3</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.phptravels.scriptsSG2.TestClassLandingSG2</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">verifyBookings</span>
-                <span class="method-start">29932 ms</span>
+                <span class="method-name">verifyHome</span>
+                <span class="method-start">29964 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyBookings status=SUCCESS method=TestClassBookingsSG3.verifyBookings()[pri:6, i...)</span>
-                <span class="method-start">31527 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">VerifyPendingToConfirm</span>
-                <span class="method-start">31528 ms</span>
+                <span class="method-name">verifyHotelSearch</span>
+                <span class="method-start">32822 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=VerifyPendingToConfirm status=SUCCESS method=TestClassBookingsSG3.VerifyPendingToCo...)</span>
-                <span class="method-start">33119 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">VerifyDeleteCancelledBookings</span>
-                <span class="method-start">33122 ms</span>
+                <span class="method-name">verifyFlights</span>
+                <span class="method-start">42780 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=VerifyDeleteCancelledBookings status=SUCCESS method=TestClassBookingsSG3.VerifyDele...)</span>
-                <span class="method-start">44036 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">RevertChanges</span>
-                <span class="method-start">44043 ms</span>
+                <span class="method-name">verifyTours</span>
+                <span class="method-start">43915 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=RevertChanges status=SUCCESS method=TestClassBookingsSG3.RevertChanges()[pri:9, ins...)</span>
-                <span class="method-start">49302 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">VerifyInvoicePaidBookings</span>
-                <span class="method-start">49304 ms</span>
+                <span class="method-name">verifyVisa</span>
+                <span class="method-start">44972 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=VerifyInvoicePaidBookings status=SUCCESS method=TestClassBookingsSG3.VerifyInvoiceP...)</span>
-                <span class="method-start">55011 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">verifyWebsiteLink</span>
-                <span class="method-start">55012 ms</span>
+                <span class="method-name">verifyBlogs</span>
+                <span class="method-start">46055 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown([TestResult name=verifyWebsiteLink status=SUCCESS method=TestClassBookingsSG3.verifyWebsiteLink()[pr...)</span>
-                <span class="method-start">59011 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">verifyOffers</span>
+                <span class="method-start">48148 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyCurrencyUpdate</span>
+                <span class="method-start">50333 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifylinks</span>
+                <span class="method-start">53262 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.phptravels.scriptsSG3.TestClassLoginSG3</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.phptravels.scriptsSG2.TestClassLoginSG2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quitBrowser</span>
-                <span class="method-start">59011 ms</span>
+                <span class="method-start">62134 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

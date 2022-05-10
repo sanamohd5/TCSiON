@@ -5,11 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddFundsPageSG1 {
 	
+//	All WebElements are identified by @FindBy annotation
 	
 		WebDriver driver;
 		@FindBy(css="li.user_wallet > a:nth-child(1)")

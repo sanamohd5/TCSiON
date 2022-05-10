@@ -1,9 +1,6 @@
 package com.phptravels.scriptsSG1;
 
 import java.io.IOException;
-
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,14 +10,15 @@ import com.phptravelspages.stage1.MyProfilePageSG1;
 
 
 public class TestClassMyProfileSG1 extends TestBase {
+	
 	MyProfilePageSG1 objMyProfile;
 	
-	@Test(priority=8)  
+	@Test(priority=8)  //Verifying My Profile Link
 	public void verifyMyProfile() throws IOException{
 		objMyProfile = new MyProfilePageSG1(driver);
 		objMyProfile.clickMyProfile();
 	}
-		@Test(priority=9)  
+		@Test(priority=9)  //Updating address in My Profile 
 		public void UpdateAddress() throws IOException{
 			objMyProfile = new MyProfilePageSG1(driver);
 		    String state = ExcelUtility.getCellData(10, 2);
@@ -44,10 +42,9 @@ public class TestClassMyProfileSG1 extends TestBase {
 			String expectedMessage = "https://www.phptravels.net/account/profile/success";
 		   Assert.assertEquals(expectedMessage, actualMessage);
 		}
-		@Test(priority=10)  
+		@Test(priority=10)  //Verifying Logout button
 		public void verifyLogout() throws IOException{
 			objMyProfile = new MyProfilePageSG1(driver);
 			objMyProfile.clickLogout();
+			}
 		}
-
-}

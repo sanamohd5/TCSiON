@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DashBoardSG4 {
 	
+//	All WebElements are identified by @FindBy annotation
+	
 	WebDriver driver;
 	@FindBy(xpath="//div/a[3]")
 	private WebElement dashboardBtn;
@@ -27,7 +29,7 @@ public class DashBoardSG4 {
 	
 	public DashBoardSG4(WebDriver driver) {    
     	this.driver = driver;    
-        PageFactory.initElements(driver, this); 
+        PageFactory.initElements(driver, this);  //This initElements method will create all WebElements
         }    
 	public void ClickDashboardBtn() {
 		dashboardBtn.click();

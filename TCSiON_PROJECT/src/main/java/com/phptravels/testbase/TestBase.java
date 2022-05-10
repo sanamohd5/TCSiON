@@ -92,9 +92,10 @@ public String takeScreenshot(String name) throws IOException {
 @AfterTest
 public void quitBrowser() throws IOException, InterruptedException {
 	Thread.sleep(2000);
+	if(driver!=null) {
 	driver.quit();
 	} 
 	
 }
-
+}
 	

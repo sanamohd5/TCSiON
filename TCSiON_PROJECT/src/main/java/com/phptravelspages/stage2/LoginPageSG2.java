@@ -12,6 +12,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class LoginPageSG2 {
+	
+//	All WebElements are identified by @FindBy annotation
+	
 	WebDriver driver;
    
 	@FindBy(xpath="//div[3]//div[1]/a/small")
@@ -28,7 +31,7 @@ public class LoginPageSG2 {
     
     public LoginPageSG2(WebDriver driver) {    
     	this.driver = driver;    
-        PageFactory.initElements(driver, this); 
+        PageFactory.initElements(driver, this); //This initElements method will create all WebElements
         }        
     public void clickCookie() {
     	cookie.click();

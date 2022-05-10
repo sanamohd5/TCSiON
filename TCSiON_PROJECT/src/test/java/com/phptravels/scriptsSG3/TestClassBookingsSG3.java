@@ -1,6 +1,7 @@
 package com.phptravels.scriptsSG3;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -14,13 +15,13 @@ public class TestClassBookingsSG3 extends TestBase{
 	
 	BookingsPageSG3 objBookings;
 	
-	@Test(priority=6)   //Verifying valid username and invalid password by selecting Admin
+	@Test(priority=6)   //Verifying Bookings link is redirected to bookings page
 	public void verifyBookings() throws IOException {  
 		objBookings = new BookingsPageSG3(driver);
 		objBookings.clickBookings();
 	}
 		
-	@Test(priority = 7)
+	@Test(priority = 7) //Verifying Bookings status is changed from pending to confirm
 	public void VerifyPendingToConfirm() throws InterruptedException, IOException {	
 		String PendingBC=objBookings.setPendingBookCount();		
 		String zero="0";
@@ -39,7 +40,7 @@ public class TestClassBookingsSG3 extends TestBase{
 
 		}
 	}
-	@Test(priority = 8)
+	@Test(priority = 8) //Verifying Delete button in cancelled bookings entries
 	public void VerifyDeleteCancelledBookings() throws IOException, InterruptedException {
 				
 	
@@ -68,7 +69,7 @@ public class TestClassBookingsSG3 extends TestBase{
 		}
 	}
 
-	@Test(priority = 9)
+	@Test(priority = 9) //Verifying unpaid is changed to paid bookings
 	public void RevertChanges() throws InterruptedException {
 		objBookings = new BookingsPageSG3(driver);
 		
@@ -90,7 +91,7 @@ public class TestClassBookingsSG3 extends TestBase{
 		}
 		
 	}
-	@Test(priority = 10)
+	@Test(priority = 10) //Verifying invoice page under paid bookings
 	public void VerifyInvoicePaidBookings() throws InterruptedException {
 		objBookings = new BookingsPageSG3(driver);	
 		String PaidBC=objBookings.setPaidBookCount();
@@ -113,7 +114,7 @@ public class TestClassBookingsSG3 extends TestBase{
 
 		}
 	}
-	@Test(priority=11)   
+	@Test(priority=11)   //Verifying whether Website Link is redirected
 	public void verifyWebsiteLink() throws IOException, InterruptedException {  
 		objBookings = new BookingsPageSG3(driver);
 		driver.getCurrentUrl();
@@ -122,7 +123,8 @@ public class TestClassBookingsSG3 extends TestBase{
 		String actualTitle = driver.getTitle();
 		System.out.println("Website Title: "+actualTitle);		
 		String expectedTitle =AutomationConstants.WEBSITE_TITLE;
-				
 		Assert.assertEquals(actualTitle,expectedTitle);
+
 	}
+	
 }

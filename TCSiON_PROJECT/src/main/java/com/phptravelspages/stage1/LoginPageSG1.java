@@ -2,7 +2,6 @@ package com.phptravelspages.stage1;
 
 import java.util.ArrayList;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,8 +12,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class LoginPageSG1 {
-	WebDriver driver;
+	
 	// All WebElements are identified by @FindBy annotation
+	
+	WebDriver driver;		
 	@FindBy(xpath="//div[2]/div[1]//div[2]//a/small")
 	private WebElement customerfront;      
 	@FindBy(xpath="//input[@placeholder='Email']")
@@ -51,11 +52,11 @@ public class LoginPageSG1 {
  	   email.clear();
  	   }
     public void clearPassword() {
- 	   password.clear();                
+ 	   password.clear(); 
  	   }
     public void clickLoginButton() {
-    	JavascriptExecutor js = (JavascriptExecutor) driver;
-    	js.executeScript("arguments[0].scrollIntoView();",LoginButton );
+    //	JavascriptExecutor js = (JavascriptExecutor) driver;
+    //	js.executeScript("arguments[0].scrollIntoView();",LoginButton );
     	WebDriverWait wait=new WebDriverWait(driver,10);	  
     	wait.until(ExpectedConditions.elementToBeClickable(LoginButton));    	
     	LoginButton.click();

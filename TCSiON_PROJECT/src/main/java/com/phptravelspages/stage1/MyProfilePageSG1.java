@@ -10,6 +10,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class MyProfilePageSG1 {
+	
+//	All WebElements are identified by @FindBy annotation
+	
 	WebDriver driver;
 	@FindBy(xpath="//div[3]/ul/li[4]/a")
     private WebElement myprofile;
