@@ -54,9 +54,7 @@ public class LoginPageSG1 {
     public void clearPassword() {
  	   password.clear(); 
  	   }
-    public void clickLoginButton() {
-    //	JavascriptExecutor js = (JavascriptExecutor) driver;
-    //	js.executeScript("arguments[0].scrollIntoView();",LoginButton );
+    public void clickLoginButton() {    
     	WebDriverWait wait=new WebDriverWait(driver,10);	  
     	wait.until(ExpectedConditions.elementToBeClickable(LoginButton));    	
     	LoginButton.click();

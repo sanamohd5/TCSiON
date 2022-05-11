@@ -105,7 +105,7 @@ public class TestClassBookingsSG3 extends TestBase{
 			System.out.println("Paid Bookings Count: "+PaidBC);
 			objBookings.clickInvoice();
 			objBookings.confirmBookingInvoice();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			String actualTitle = driver.getCurrentUrl();
 			System.out.println("Invoice Page Link: " +actualTitle);			
 			String expectedTitle ="https://www.phptravels.net/api/admin/bookings/paid";

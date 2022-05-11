@@ -15,6 +15,7 @@ public class TestClassMyBookingsSG1 extends TestBase {
 		objMyBookings =new MyBookingsPageSG1(driver);
 		objMyBookings.clickMyBookings();	  
 		objMyBookings.DisplayVoucher();
+		Thread.sleep(2000);
 		objMyBookings.setVoucherConfirm();
 			    
 	

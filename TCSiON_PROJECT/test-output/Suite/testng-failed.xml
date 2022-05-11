@@ -3,22 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.phptravels.scriptsSG2.TestClassLandingSG2">
+      <class name="com.phptravels.scriptsSG4.TestClassDashboardSG4">
         <methods>
-          <include name="verifylinks"/>
+          <include name="verifyBookings"/>
           <include name="quitBrowser"/>
           <include name="tearDown"/>
           <include name="onSetup"/>
         </methods>
-      </class> <!-- com.phptravels.scriptsSG2.TestClassLandingSG2 -->
-      <class name="com.phptravels.scriptsSG2.TestClassLoginSG2">
-        <methods>
-          <include name="verifyVeVp"/>
-          <include name="quitBrowser"/>
-          <include name="tearDown"/>
-          <include name="onSetup"/>
-        </methods>
-      </class> <!-- com.phptravels.scriptsSG2.TestClassLoginSG2 -->
+      </class> <!-- com.phptravels.scriptsSG4.TestClassDashboardSG4 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
